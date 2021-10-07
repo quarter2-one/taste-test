@@ -1,0 +1,17 @@
+{
+  "name": "taste",
+  "version": "1.0.0",
+  "description": "Simple testing framework.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/testindex.js"
+  },
+  "keywords": [
+    "Test"
+  ],
+  "author": "Richard J. Glanvill <thedecimalspace@gmail.com> (thedecimal.space)",
+  "license": "ISC"
+}
