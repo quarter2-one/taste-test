@@ -1,20 +1,14 @@
-var taste = require('taste');
+const taste = require('taste-test');
 
-var Performance = taste.Performance;
-
+const test = new taste.Performance();
+test.add("Send large images down the wire only to be displayed at 150x150.", noRushFn.bind(null, 35));
+test.add("Do whatever it is Upwork does with their mobile site.", noRushFn.bind(null, 70));
+test.add("Add hundreds of links to large script and css files you dont use.", noRushFn.bind(null, 50));
+test.add("Hire a cheap developer.", noRushFn.bind(null, 70));
+test.runAsynch(10);
 
 var slower = 0;
-function delayedFn (time, done){
-  var delay = (slower++ % 2 === 0)? 1 : 4;
-    setTimeout(function () {
-        done();
-    },
-    time * delay);
+function noRushFn(time, done) {
+  let delay = (slower++ % 2 === 0) ? 1 : 4;
+  setTimeout(() => { done(); }, time * delay);
 };
-
-var test =  new Performance();
-test.add("one",  delayedFn.bind(null, 60));
-test.add("two",  delayedFn.bind(null, 59));
-test.add("three",  delayedFn.bind(null, 58));
-test.runAsynch(10);
-// test.runSynch(10);

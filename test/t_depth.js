@@ -22,7 +22,7 @@ tasteTest.describe(
       return (this.rent === 8000);
     },
     "vars" : {
-      'rent'  : 8000
+      'rent'  : 80003
     }
   },
   "Other tests" : {
