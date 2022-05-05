@@ -23,7 +23,7 @@ function Taste(depth) {
             var test = def[key];
             if (typeof test !== 'function'){
                 Taste.reporter.emit('describe', key, indent);
-                me.describe(test, indent+1, next);
+                me.describe(test, indent+2, next);
             } else {
                 me.singleTest(key, test, next, indent + 1, def['beforeEach'], def['afterEach'], def['vars']);
             }

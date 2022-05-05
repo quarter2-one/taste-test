@@ -1,7 +1,7 @@
 {
-  "name": "taste",
-  "version": "1.0.0",
-  "description": "Simple testing framework.",
+  "name": "taste-test",
+  "version": "0.1.0",
+  "description": "Write tests in simple-to-read JSON. Includes support for async testing, perfomance-testing and more.",
   "main": "app.js",
   "directories": {
     "test": "test"
@@ -10,8 +10,10 @@
     "test": "node test/testindex.js"
   },
   "keywords": [
-    "Test"
+    "taste-test",
+    "test", "testing",
+    "json"
   ],
-  "author": "Richard J. Glanvill <thedecimalspace@gmail.com> (thedecimal.space)",
+  "author": "Richard J. Glanvill <thedecimalspace@gmail.com>",
   "license": "ISC"
 }
