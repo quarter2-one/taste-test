@@ -7,13 +7,17 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node test/testindex.js"
+    "test": "node test/t_overall.js"
   },
   "keywords": [
     "taste-test",
-    "test", "testing",
+    "test",
+    "testing",
     "json"
   ],
   "author": "Richard J. Glanvill <thedecimalspace@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cmd-colour": "^1.0.0"
+  }
 }

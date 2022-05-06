@@ -1,83 +1,83 @@
 
 
-var Taste =  require('../taste.js');
+var Taste = require('../app.js').Test;
 
 
 Error.stackTraceLimit = 0;
 
 var msg = "Property not added correctly.";
 var tryMergeProperty = function (val, cb) {
-    return function () {
-          return true;
-    }
+  return function () {
+    return true;
+  };
 };
 
 
 var tasteTest = new Taste();
 
 tasteTest.describe(
-{
-  "Main tests" : {
-    "Test 1" : function () {
-      return (this.rent === 8000);
-    },
-    "vars" : {
-      'rent'  : 80003
-    }
-  },
-  "Other tests" : {
-    "Weight tests" : {
-      "beforeEach" : function () {
-        this.beforeEachCalled = true;
+  {
+    "Main tests": {
+      "Test 1": function () {
+        return (this.rent === 8000);
       },
-      "afterEach" : function () {
-        this.afterEachCalled = true;
-      },
-      "weight test 1" : function () {
-        return (this.beforeEachCalled);
-      },
-      "weight test 2" : function () {
-        return (this.afterEachCalled);
-      },
-    },
-    "Height tests": {
-      "Height test 1" : function () {
-        return true;
+      "vars": {
+        'rent': 80003
       }
     },
-    "Personality test" : {
-      "Social" : {
-        "Family" : {
-          "Dad" : function () {
-            return true
-          },
-          "Pal" : function () {
-            return true;
-          }
+    "Other tests": {
+      "Weight tests": {
+        "beforeEach": function () {
+          this.beforeEachCalled = true;
         },
-      }
-    },
-    "Levels" : {
-      "Sub section level 1" : {
-        "Sub section level 2" : {
-          "Test at level 2" : function () {
-            return true;
+        "afterEach": function () {
+          this.afterEachCalled = true;
+        },
+        "weight test 1": function () {
+          return (this.beforeEachCalled);
+        },
+        "weight test 2": function () {
+          return (this.afterEachCalled);
+        },
+      },
+      "Height tests": {
+        "Height test 1": function () {
+          return true;
+        }
+      },
+      "Personality test": {
+        "Social": {
+          "Family": {
+            "Dad": function () {
+              return true;
+            },
+            "Pal": function () {
+              return true;
+            }
           },
-          "Sub section level 3" : {
-            "Sub section level 4" : {
-              "Sub section level 5" : {
-                  "test at level 5" : function () {
+        }
+      },
+      "Levels": {
+        "Sub section level 1": {
+          "Sub section level 2": {
+            "Test at level 2": function () {
+              return true;
+            },
+            "Sub section level 3": {
+              "Sub section level 4": {
+                "Sub section level 5": {
+                  "test at level 5": function () {
                     return true;
                   },
-                  "test 2 at level 5" : function () {
+                  "test 2 at level 5": function () {
                     return true;
                   }
+                }
               }
             }
           }
         }
       }
     }
-  }
 
-});
+  });
