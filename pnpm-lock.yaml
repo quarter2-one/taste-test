@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      cmd-colour:
+        specifier: ^1.0.0
+        version: 1.0.0
+
+packages:
+
+  cmd-colour@1.0.0:
+    resolution: {integrity: sha512-oi3GIkTurSnxOsZWuCcd+dCSAfz42UJ5v+Oa0VmLyywqlLlYWUx79zLLs8uPUkTmbD04r5HWgXY+huseSh7zZw==}
+
+snapshots:
+
+  cmd-colour@1.0.0: {}

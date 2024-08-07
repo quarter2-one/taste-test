@@ -1,8 +1,18 @@
 # taste-test
+
 ## taste-test testing-sweet
+
 ### Take the taste test, you'll schmaaak it!
 
-Are puns in bad taste? Let's put it to the *taste-test*:
+### Installation
+
+```
+pnpm add -D taste-test
+```
+
+### Usage
+
+Are puns in bad taste? Let's put it to the _taste-test_:
 
 ```
 var assert = require('assert');
@@ -20,7 +30,7 @@ var taste_test = {
             "Pictures on your gran.":
                 function () {
                     assert.equal("Good-taste", "Good-taste", "Not in good taste.");
-                    return true; 
+                    return true;
                 },
             "Pictures on your gran naked.":
                 function () {
@@ -54,13 +64,9 @@ var taste_test = {
 test.describe(taste_test);
 ```
 
-
-
-
-
 ## Performance
-Making your users wait is in bad taste. Test the performance of your functions with *taste*, and taste of true performance.
 
+Making your users wait is in bad taste. Test the performance of your functions with _taste_, and taste of true performance.
 
 ```
 const taste = require('taste-test');

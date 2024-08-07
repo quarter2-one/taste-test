@@ -1,4 +1,4 @@
-const taste = require('taste-test');
+var taste = require("../app");
 
 const test = new taste.Performance();
 test.add("Send large images down the wire only to be displayed at 150x150.", noRushFn.bind(null, 35));
@@ -9,6 +9,8 @@ test.runAsynch(10);
 
 var slower = 0;
 function noRushFn(time, done) {
-  let delay = (slower++ % 2 === 0) ? 1 : 4;
-  setTimeout(() => { done(); }, time * delay);
-};
+  let delay = slower++ % 2 === 0 ? 1 : 4;
+  setTimeout(() => {
+    done();
+  }, time * delay);
+}
